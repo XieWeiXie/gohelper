@@ -1,3 +1,3 @@
-module github.com/wuxiaoxiaoshen/go-helper
+module github.com/wuxiaoxiaoshen/gohelper
 
-go 1.12
+go 1.13
