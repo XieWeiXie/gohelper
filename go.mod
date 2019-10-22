@@ -1,3 +1,3 @@
-module github.com/wuxiaoxiaoshen/gohelper
+module gohelper
 
 go 1.13
