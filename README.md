@@ -1,4 +1,9 @@
 <h1 align="center">Go-helper</h1>
+<p align="center">
+    <a href="https://github.com/wuxiaoxiaoshen">
+        <img src="https://img.shields.io/badge/Author-wuxiaoxiaoshen-green" alt="Author">
+    </a>
+</p>
 
 > 公共库/备忘录
 
