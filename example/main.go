@@ -10,10 +10,12 @@ func main() {
 	OK := make(chan bool)
 	go func() {
 		// do something
+		fmt.Println("in main")
 		OK <- true
 	}()
-	fmt.Println(fmt.Sprintf("Done?: %t!", <-OK))
+
 	method2()
+	fmt.Println(fmt.Sprintf("Done?: %t!", <-OK))
 }
 
 func method2() {
@@ -23,6 +25,7 @@ func method2() {
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
+			fmt.Println("in method2")
 			// do something
 		}()
 	}
