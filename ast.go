@@ -4,6 +4,7 @@ import (
 	"go/ast"
 	"go/parser"
 	"go/token"
+	"log"
 	"os"
 	"strings"
 )
@@ -25,6 +26,8 @@ func NewAstFile(path string, mode parser.Mode) *AstFile {
 	if e != nil {
 		return nil
 	}
+	ast.Print(set, fs)
+	log.Println()
 	return &AstFile{
 		path: path,
 		file: fs,
